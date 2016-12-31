@@ -6,12 +6,12 @@ So gathered both two feature and integrated into one.
 Please pay attention.
 
 When do configuration for redis non-cluster session manager. please use below pair.
-<Valve className="com.orangefunction.tomcat.redissessions.RedisSessionHandlerValve" />
-<Manager className="com.orangefunction.tomcat.redissessions.RedisSessionManager" "..."/>
+[<Valve className="com.orangefunction.tomcat.redissessions.RedisSessionHandlerValve" />]
+[<Manager className="com.orangefunction.tomcat.redissessions.RedisSessionManager" "..."/>]
 
 when do configuration for redis cluster session manager, please use below pair.
-<Valve className="com.orangefunction.tomcat.redissessions.RedisClusterSessionHandlerValve" />
-<Manager className="com.orangefunction.tomcat.redissessions.RedisClusterSessionManager" "..."/>
+[<Valve className="com.orangefunction.tomcat.redissessions.RedisClusterSessionHandlerValve" />]
+[<Manager className="com.orangefunction.tomcat.redissessions.RedisClusterSessionManager" "..."/>]
 
 for more configuraion details, please refer below.
 

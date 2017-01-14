@@ -766,7 +766,7 @@ public class RedisClusterSessionManager extends ManagerBase implements Lifecycle
       this.connectionPoolConfig.setMaxTotal(getMaxTotal());
       this.connectionPoolConfig.setMinIdle(getMinIdle());
       this.connectionPoolConfig.setMaxIdle(getMaxIdle());
-      jedisCluster = new JedisCluster(haps, timeout, maxRedirections, this.connectionPoolConfig);
+      jedisCluster = new JedisCluster(haps, timeout, maxRedirections, this.connectionPoolConfig, password);
 
       /*
       if (getSentinelMaster() != null) {
